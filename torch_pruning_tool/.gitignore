@@ -1,0 +1,12 @@
+__pycache__
+data
+*.pth
+.vscode
+*.egg-info
+dist
+build
+checkpoints
+run
+text.txt
+run*
+baselines
