@@ -111,7 +111,7 @@ sh .\scripts\resnet_imagenet\run_resnet_imagenet_pruning.sh
 sh .\scripts\resnet_imagenet\run_resnet_imagenet_eval.sh
 ```
 
-### Reference
+## Reference
 
 ```
 @article{GHIMIRE2023104745,
