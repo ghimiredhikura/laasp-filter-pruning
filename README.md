@@ -103,12 +103,15 @@
 ### Reference
 
 ```
-@article{ghimire2023loss,
-  title={Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration},
-  author={Ghimire, Deepak and Lee, Kilho and Kim, Seong-heum},
-  journal={Image and Vision Computing},
-  pages={104745},
-  year={2023},
-  publisher={Elsevier}
+@article{GHIMIRE2023104745,
+title = {Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration},
+author = {Deepak Ghimire and Kilho Lee and Seong-heum Kim},
+journal = {Image and Vision Computing},
+pages = {104745},
+year = {2023},
+issn = {0262-8856},
+doi = {https://doi.org/10.1016/j.imavis.2023.104745},
+url = {https://www.sciencedirect.com/science/article/pii/S0262885623001191},
+keywords = {Deep neural networks, Structured pruning, Pruning criteria}
 }
 ```
