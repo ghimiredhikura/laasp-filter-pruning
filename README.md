@@ -29,27 +29,25 @@
 
 ## Models
 
-| Model        | Dataset  | Baseline Top@1 Acc. (%) | Top@1 Acc. (%) | Top@1 Acc. Drop (%) | Top@5 Acc. (%) | FLOPs RR (%)| 
-|--------------|:--------:|:--------------:|:--------------:|:--------------:|:-----------:|:----------:|
-| Vgg16        | CIFAR10 | 93.90 ± 0.16   | -              | 34.6        |  34.6        |  34.6        |
-| Vgg16        | CIFAR10 | 93.79 ± 0.11   | -              | 60.5        |  34.6        |  34.6        |
+| Model        | Dataset | Baseline Top@1 Acc. (%) | Pruned Top@1 Acc. (%) | Top@1 Acc. Drop (%) | Pruned Top@5 Acc. (%) | FLOPs RR (%)| 
+|--------------|:-------:|:-----------------------:|:---------------------:|:-------------------:|:---------------------:|:-----------:|
+| [Vgg16](https://drive.google.com/drive/folders/1y29ViTn50rBheigpRqqhoFbqBdlot0m0?usp=sharing)         | CIFAR10 |  93.79 ± 0.23           | 93.90 ± 0.16          | -0.11               | -                    | 34.6         |
+| [Vgg16](https://drive.google.com/drive/folders/1L41gwRmOZlAXO6H07SAZEtGXjdlBdHFo?usp=sharing)        | CIFAR10 |  93.79 ± 0.23           | 93.79 ± 0.11          | 0.00                | -                    | 60.5         |
 |         |  |   |              |         | | | 
-
-
-| ResNet32     | CIFAR10 | 92.64 ± 0.09   | -              | 53.3        |
-| ResNet56     | CIFAR10 | 93.04 ± 0.08   | -              | 52.6        |
-| ResNet110    | CIFAR10 | 94.17 ± 0.16   | -              | 52.6        |
-| ResNet110    | CIFAR10 | 93.58 ± 0.21   | -              | 58.5        |
-|         |  |   |              |         |
-| ResNet18     | ImageNet | 68.66          | 88.50          | 42.2        |
-| ResNet18     | ImageNet | 68.12          | 88.07          | 45.4        |
-| ResNet34     | ImageNet | 72.65          | 90.98          | 41.4        |
-| ResNet34     | ImageNet | 72.37          | 90.80          | 45.4        |
-| ResNet50     | ImageNet | 75.85          | 92.81          | 42.3        |
-| ResNet50     | ImageNet | 75.44          | 92.59          | 53.8        |
-|         |  |   |              |         |
-| MobileNetV2  | ImageNet | 71.00          | 89.86          | 30.0        |
-| MobileNetV2  | ImageNet | 68.45          | 88.40          | 54.5        |
+| [ResNet32](https://drive.google.com/drive/folders/1Lu4it1XjvnluZpno3mzoQgl9YELVwQuO?usp=sharing)     | CIFAR10 | 93.12 ± 0.04            | 92.64 ± 0.09          | 0.48                | -                    | 53.3         |
+| [ResNet56](https://drive.google.com/drive/folders/1LvWNBparWqcSAfBJecukR94BwMcHcYhZ?usp=sharing)     | CIFAR10 | 93.61 ± 0.11            | 93.04 ± 0.08          | 0.12                | -                    | 52.6         |
+| [ResNet110](https://drive.google.com/drive/folders/1LwXjwQcdiz4eIPprpSOUCoUG7yX8O3vH?usp=sharing)    | CIFAR10 | 94.41 ± 0.07            | 94.17 ± 0.16          | 0.24                | -                    | 52.5         |
+| [ResNet110](https://drive.google.com/drive/folders/1y6WDGzDcrTTSfpB_d0aHWnLHM4lfv9_D?usp=sharing)    | CIFAR10 | 94.41 ± 0.07            | 93.58 ± 0.21          | 0.83                | -                    | 58.5         | 
+|         |  |   |              |         | | |
+| [ResNet18](https://drive.google.com/drive/folders/1LCsKknuWS81vlHcTxY5B7NIvDQkUf_24?usp=sharing)     | ImageNet | 70.58                  | 68.66                 | 1.92                | 88.50                | 42.2         |
+| [ResNet18](https://drive.google.com/drive/folders/1LC_mJ8TK1gx_YQ46KsojR21hG0ixYs-2?usp=sharing)     | ImageNet | 70.58                  | 68.12                 | 2.46                | 88.07                | 45.4         |
+| [ResNet34](https://drive.google.com/drive/folders/1LC9JS32vEsl7_GKkDRV83jU4coqmtIIO?usp=sharing)     | ImageNet | 73.90                  | 72.65                 | 1.25                | 90.98                | 41.4         |
+| [ResNet34](https://drive.google.com/drive/folders/1LC6IU7V1N8Dw6v3Yj3Z68dESe-ANiv1F?usp=sharing)     | ImageNet | 73.90                  | 72.37                 | 1.53                | 90.80                | 45.4         |
+| [ResNet50](https://drive.google.com/drive/folders/1LB-EIZYu69L5L0C1W5jmP62FVYxgPpIT?usp=sharing)     | ImageNet | 76.48                  | 75.85                 | 0.63                | 92.81                | 42.3         | 
+| [ResNet50](https://drive.google.com/drive/folders/1L5mIhmNxHMW1gnVSkmsJl14bQPnP_tJc?usp=sharing)     | ImageNet | 76.48                  | 75.44                 | 1.04                | 92.59                | 53.9         | 
+|         |  |   |              |         | | | 
+| MobileNetV2  | ImageNet | 71.79                  | 71.00                 | 0.79                | 89.86                | 30.0         |
+| MobileNetV2  | ImageNet | 71.79                  | 68.45                 | 3.34                | 88.40                | 54.5         |
 
 ## VGGNet on CIFAR-10
 
