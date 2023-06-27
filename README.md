@@ -30,7 +30,7 @@
 ## Models
 
 | Model        | Dataset | Baseline Top@1 Acc. (%) | Pruned Top@1 Acc. (%) | Top@1 Acc. Drop (%) | Pruned Top@5 Acc. (%) | FLOPs RR (%)| 
-|--------------|:-------:|:-----------------------:|:---------------------:|:-------------------:|:---------------------:|:-----------:|
+|:--------------|:-------:|:-----------------------:|:---------------------:|:-------------------:|:---------------------:|:-----------:|
 | [Vgg16](https://drive.google.com/drive/folders/1y29ViTn50rBheigpRqqhoFbqBdlot0m0?usp=sharing)         | CIFAR10 |  93.79 ± 0.23           | 93.90 ± 0.16          | -0.11               | -                    | 34.6         |
 | [Vgg16](https://drive.google.com/drive/folders/1L41gwRmOZlAXO6H07SAZEtGXjdlBdHFo?usp=sharing)        | CIFAR10 |  93.79 ± 0.23           | 93.79 ± 0.11          | 0.00                | -                    | 60.5         |
 |         |  |   |              |         | | | 
