@@ -46,8 +46,8 @@
 | [ResNet50](https://drive.google.com/drive/folders/1LB-EIZYu69L5L0C1W5jmP62FVYxgPpIT?usp=sharing)     | ImageNet | 76.48                  | 75.85                 | 0.63                | 92.81                | 42.3         | 
 | [ResNet50](https://drive.google.com/drive/folders/1L5mIhmNxHMW1gnVSkmsJl14bQPnP_tJc?usp=sharing)     | ImageNet | 76.48                  | 75.44                 | 1.04                | 92.59                | 53.9         | 
 |         |  |   |              |         | | | 
-| MobileNetV2  | ImageNet | 71.79                  | 71.00                 | 0.79                | 89.86                | 30.0         |
-| MobileNetV2  | ImageNet | 71.79                  | 68.45                 | 3.34                | 88.40                | 54.5         |
+| [MobileNetV2](https://drive.google.com/drive/folders/1zt4JcPSlkJjJARDei2f0cSy-4WBeXEDv?usp=sharing)  | ImageNet | 71.79                  | 71.00                 | 0.79                | 89.86                | 30.0         |
+| [MobileNetV2](https://drive.google.com/drive/folders/1ztFsVI87toRPOKywqpENR4ubGS7Gj9vt?usp=sharing)  | ImageNet | 71.79                  | 68.45                 | 3.34                | 88.40                | 54.5         |
 
 ## VGGNet on CIFAR-10
 
