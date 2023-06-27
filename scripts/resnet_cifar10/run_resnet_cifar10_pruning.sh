@@ -24,23 +24,24 @@ run_110()
 {
     NET="resnet110"
     FLOP_RATE="0.58"
-    STEP_SCALE="1.5"
-    
+    STEP_SCALE="1.0"
+
     PRUNE_EPOCH_NO=50
-    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.1.$FLOP_RATE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
-    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.2.$FLOP_RATE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
-    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.3.$FLOP_RATE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
+    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.1.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
+    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.2.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
+    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.3.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
 }
 
 run_56()
 {
     NET="resnet56"
     FLOP_RATE="0.55"
-    
+    STEP_SCALE="1.0"
+
     PRUNE_EPOCH_NO=50
-    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.1.$FLOP_RATE $FLOP_RATE $PRUNE_EPOCH_NO
-    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.2.$FLOP_RATE $FLOP_RATE $PRUNE_EPOCH_NO
-    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.3.$FLOP_RATE $FLOP_RATE $PRUNE_EPOCH_NO
+    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.1.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
+    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.2.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
+    pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.3.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
 }
 
 run_32()
@@ -61,7 +62,7 @@ run_20()
     FLOP_RATE="0.50"
     PRUNE_EPOCH_NO=50
 
-    STEP_SCALE="1.5"
+    STEP_SCALE="1.0"
     pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.1.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
     pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.2.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE
     pruning_ratio_pretrain_cifar10_resnet prune $NET $PRUNE_DIR/$PRUNE_EPOCH_NO.$NET.3.$FLOP_RATE.$STEP_SCALE $FLOP_RATE $PRUNE_EPOCH_NO $STEP_SCALE    

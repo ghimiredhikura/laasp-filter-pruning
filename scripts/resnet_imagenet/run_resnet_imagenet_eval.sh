@@ -14,18 +14,6 @@ eval_resnet_imagenet()
     --batch_size 256
 }
 
-# resnet18 
-#BASELINE_PATH="models_baseline/ImageNet/ResNet18/resnet18.model_best.pth.tar"
-#PRUNED_PATH="models_pruned/ImageNet/ResNet18_FlopRed_0.42/resnet18.model_best.pth.tar"
-#eval_resnet_imagenet eval resnet18 $EVAL_DIR/resnet18_0.42 $BASELINE_PATH $PRUNED_PATH
-
-
-# resnet34 
-#BASELINE_PATH="models_baseline/ImageNet/ResNet34/resnet34.model_best.pth.tar"
-#PRUNED_PATH="models_pruned/ImageNet/ResNet34_FlopRed_0.41/resnet34.model_best.pth.tar"
-#eval_resnet_imagenet eval resnet34 $EVAL_DIR/resnet34_0.41 $BASELINE_PATH $PRUNED_PATH
-
-
 # resnet50 
 BASELINE_PATH="models_baseline/ImageNet/ResNet50/resnet50.model_best.pth.tar"
 PRUNED_PATH="models_pruned\ImageNet\ResNet50_FlopRed_0.54\resnet50.model_best_small.pth.tar"

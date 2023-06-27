@@ -51,27 +51,31 @@
 
 ## VGGNet on CIFAR-10
 
-- TODO
-
 ### Training-Pruning
 
-- TODO
+```ruby
+sh .\scripts\vgg16_cifar10\run_vgg16_pruning.sh
+```
 
 ### Evaluation
 
-- TODO
+```ruby
+sh .\scripts\vgg16_cifar10\run_vgg16_eval.sh
+```
 
 ## ResNet on CIFAR-10
 
-- TODO
-
 ### Training-Pruning
 
-- TODO
+```ruby
+sh .\scripts\resnet_cifar10\run_resnet_cifar10_pruning.sh
+```
 
 ### Evaluation
 
-- TODO
+```ruby
+sh .\scripts\resnet_cifar10\run_resnet_cifar10_eval.sh  
+```
 
 ## ResNet on ImageNet
 
@@ -97,11 +101,15 @@
 
 ### Training-Pruning
 
-- TODO
+```ruby
+sh .\scripts\resnet_imagenet\run_resnet_imagenet_pruning.sh
+```
 
 ### Evaluation
 
-- TODO
+```ruby
+sh .\scripts\resnet_imagenet\run_resnet_imagenet_eval.sh
+```
 
 ### Reference
 
