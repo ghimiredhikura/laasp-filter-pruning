@@ -29,6 +29,22 @@
 
 ## Models
 
+| Model        | Dataset  | Top@1 Acc. (%) | Top@5 Acc. (%) | FLOPs RR (%)|
+|--------------|:--------:|:--------------:|:--------------:|:-----------:|
+| Vgg16        | CIFAR-10 | 93.90 ± 0.16   | -              | 34.6        |
+| Vgg16        | CIFAR-10 | 93.79 ± 0.11   | -              | 60.5        |
+| ResNet32     | CIFAR-10 | 92.64 ± 0.09   | -              | 53.3        |
+| ResNet56     | CIFAR-10 | 93.04 ± 0.08   | -              | 52.6        |
+| ResNet110    | CIFAR-10 | 94.17 ± 0.16   | -              | 52.6        |
+| ResNet110    | CIFAR-10 | 93.58 ± 0.21   | -              | 58.5        |
+| ResNet18     | ImageNet | 68.66          | 88.50          | 42.2        |
+| ResNet18     | ImageNet | 68.12          | 88.07          | 45.4        |
+| ResNet34     | ImageNet | 72.65          | 90.98          | 41.4        |
+| ResNet34     | ImageNet | 72.37          | 90.80          | 45.4        |
+| ResNet50     | ImageNet | 75.85          | 92.81          | 42.3        |
+| ResNet50     | ImageNet | 75.44          | 92.59          | 53.8        |
+| MobileNetV2  | ImageNet | 71.00          | 89.86          | 30.0        |
+| MobileNetV2  | ImageNet | 68.45          | 88.40          | 54.5        |
 
 ## VGGNet on CIFAR-10
 

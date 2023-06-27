@@ -199,15 +199,15 @@ def main():
             val_acc_top1, val_acc_top5, val_loss = validate(test_loader, model_pruned, criterion)
             print_log("Pruned Val Acc@1: %0.3lf, Acc@5: %0.3lf,  Loss: %0.5f" % (val_acc_top1, val_acc_top5, val_loss), log)
 
-        print_log(
-        "Params: {:.2f} M => {:.2f} M, (Param RR {:.2f}%)".format(
-            base_size / 1e6, pruned_size / 1e6, (1.0 - pruned_size / base_size) * 100 ), log)
-        print_log(
-        "FLOPs: {:.2f} M => {:.2f} M (FLOPs RR {:.2f}%, Speed-Up {:.2f}X )".format(
-            base_ops / 1e6,
-            pruned_ops / 1e6,
-            (1.0 - pruned_ops / base_ops) * 100,
-            base_ops / pruned_ops ), log)
+            print_log(
+            "Params: {:.2f} M => {:.2f} M, (Param RR {:.2f}%)".format(
+                base_size / 1e6, pruned_size / 1e6, (1.0 - pruned_size / base_size) * 100 ), log)
+            print_log(
+            "FLOPs: {:.2f} M => {:.2f} M (FLOPs RR {:.2f}%, Speed-Up {:.2f}X )".format(
+                base_ops / 1e6,
+                pruned_ops / 1e6,
+                (1.0 - pruned_ops / base_ops) * 100,
+                base_ops / pruned_ops ), log)
 
     log.close()
 
@@ -406,7 +406,7 @@ def train(model, train_loader, test_loader, criterion, start_epoch, total_epoch,
         train_acc, train_los = train_epoch(train_loader, model, criterion, optimizer)
 
         # validate
-        val_acc_2, val_los_2 = validate(test_loader, model, criterion)
+        val_acc_2, val_los_2,_ = validate(test_loader, model, criterion)
         print("Epoch %d/%d [learning_rate=%lf] Val [Acc|Loss]: %.3f %% | %0.5f" % (epoch, total_epoch, current_learning_rate, val_acc_2, val_los_2))
 
         is_best = recorder.update(epoch, train_los, train_acc, val_los_2, val_acc_2)
@@ -514,7 +514,7 @@ def validate(val_loader, model, criterion):
     model.eval()
     for i, (input, target) in enumerate(val_loader):
         losses, top1, top5 = validate_single_epoch(input, target, model, criterion, losses, top1, top5)
-    return top1.avg, losses.avg
+    return top1.avg, top5.avg, losses.avg
 
 def validate_fast(inputs, targets, model, criterion):
     losses = AverageMeter()

@@ -170,36 +170,6 @@ def main():
     print_log("Pretrain path: {}".format(args.pretrain_path), log)
     print_log("Pruned path: {}".format(args.pruned_path), log)
 
-    '''
-    # Data loading code
-    traindir = os.path.join(args.data_path, 'train')
-    valdir = os.path.join(args.data_path, 'val')
-    normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                     std=[0.229, 0.224, 0.225])
-
-    train_dataset = datasets.ImageFolder(
-        traindir,
-        transforms.Compose([
-            transforms.RandomResizedCrop(224),
-            transforms.RandomHorizontalFlip(),
-            transforms.ToTensor(),
-            normalize,
-        ]))
-
-    train_loader = torch.utils.data.DataLoader(
-        train_dataset, batch_size=args.batch_size, shuffle=True,
-        num_workers=args.workers, sampler=None)
-
-    test_loader = torch.utils.data.DataLoader(
-        datasets.ImageFolder(valdir, transforms.Compose([
-            transforms.Resize(256),
-            transforms.CenterCrop(224),
-            transforms.ToTensor(),
-            normalize,
-        ])),
-        batch_size=args.batch_size, shuffle=False,
-        num_workers=args.workers)
-    '''
     train_dir = os.path.join(args.data_path, "train")
     val_dir = os.path.join(args.data_path, "val")
     dataset, dataset_test, train_sampler, test_sampler = load_data(train_dir, val_dir, args)
@@ -328,15 +298,15 @@ def main():
             val_acc_top1, val_acc_top5, val_loss = validate(test_loader, model_pruned, criterion)
             print_log("Pruned Val Acc@1: %0.3lf, Acc@5: %0.3lf,  Loss: %0.5f" % (val_acc_top1, val_acc_top5, val_loss), log)
 
-        print_log(
-        "Params: {:.2f} M => {:.2f} M, (Param RR {:.2f}%)".format(
-            base_size / 1e6, pruned_size / 1e6, (1.0 - pruned_size / base_size) * 100 ), log)
-        print_log(
-        "FLOPs: {:.2f} M => {:.2f} M (FLOPs RR {:.2f}%, Speed-Up {:.2f}X )".format(
-            base_ops / 1e6,
-            pruned_ops / 1e6,
-            (1.0 - pruned_ops / base_ops) * 100,
-            base_ops / pruned_ops ), log)
+            print_log(
+            "Params: {:.2f} M => {:.2f} M, (Param RR {:.2f}%)".format(
+                base_size / 1e6, pruned_size / 1e6, (1.0 - pruned_size / base_size) * 100 ), log)
+            print_log(
+            "FLOPs: {:.2f} M => {:.2f} M (FLOPs RR {:.2f}%, Speed-Up {:.2f}X )".format(
+                base_ops / 1e6,
+                pruned_ops / 1e6,
+                (1.0 - pruned_ops / base_ops) * 100,
+                base_ops / pruned_ops ), log)
 
     log.close()
 

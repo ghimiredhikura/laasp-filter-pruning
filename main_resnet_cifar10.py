@@ -240,15 +240,15 @@ def main():
             val_acc_top1, val_acc_top5, val_loss = validate(test_loader, model_pruned, criterion)
             print_log("Pruned Val Acc@1: %0.3lf, Acc@5: %0.3lf,  Loss: %0.5f" % (val_acc_top1, val_acc_top5, val_loss), log)
 
-        print_log(
-        "Params: {:.2f} M => {:.2f} M, (Param RR {:.2f}%)".format(
-            base_size / 1e6, pruned_size / 1e6, (1.0 - pruned_size / base_size) * 100 ), log)
-        print_log(
-        "FLOPs: {:.2f} M => {:.2f} M (FLOPs RR {:.2f}%, Speed-Up {:.2f}X )".format(
-            base_ops / 1e6,
-            pruned_ops / 1e6,
-            (1.0 - pruned_ops / base_ops) * 100,
-            base_ops / pruned_ops ), log)
+            print_log(
+            "Params: {:.2f} M => {:.2f} M, (Param RR {:.2f}%)".format(
+                base_size / 1e6, pruned_size / 1e6, (1.0 - pruned_size / base_size) * 100 ), log)
+            print_log(
+            "FLOPs: {:.2f} M => {:.2f} M (FLOPs RR {:.2f}%, Speed-Up {:.2f}X )".format(
+                base_ops / 1e6,
+                pruned_ops / 1e6,
+                (1.0 - pruned_ops / base_ops) * 100,
+                base_ops / pruned_ops ), log)
 
     log.close()
 
