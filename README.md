@@ -1,6 +1,6 @@
 # LAASP: Loss-Aware Automatic Selection of Filter Pruning Criteria for Deep Neural Network Acceleration 
 
-> [Ghimire, Deepak, Kilho Lee, and Seong-heum Kim. "Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration." Image and Vision Computing (2023): 104745.](https://www.sciencedirect.com/science/article/pii/S0262885623001191)
+> [Deepak Ghimire, Kilho Lee, and Seong-heum Kim, “Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration,” Image and Vision Computing, vol. 136, p. 104745, 2023.](https://www.sciencedirect.com/science/article/pii/S0262885623001191)
 
 > Note: Filter removal is based on [VainF/Torch-Pruning](https://github.com/VainF/Torch-Pruning).
 
