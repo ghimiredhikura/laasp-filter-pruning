@@ -115,16 +115,19 @@ sh .\scripts\resnet_imagenet\run_resnet_imagenet_eval.sh
 
 ## Reference
 
+If you find this code useful, please cite the following paper. 
+
 ```
 @article{GHIMIRE2023104745,
     title = {Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration},
     author = {Deepak Ghimire and Kilho Lee and Seong-heum Kim},
     journal = {Image and Vision Computing},
+    volume = {136},
     pages = {104745},
     year = {2023},
     issn = {0262-8856},
     doi = {https://doi.org/10.1016/j.imavis.2023.104745},
     url = {https://www.sciencedirect.com/science/article/pii/S0262885623001191},
-    keywords = {Deep neural networks, Structured pruning, Pruning criteria}
+    keywords = {Deep neural networks, Structured pruning, Pruning criteria},
 }
 ```
