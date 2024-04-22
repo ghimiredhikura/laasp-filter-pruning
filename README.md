@@ -1,6 +1,23 @@
 # LAASP: Loss-Aware Automatic Selection of Filter Pruning Criteria for Deep Neural Network Acceleration 
 
+![alt text](images/soongsil2.jpg)
+
 > [Deepak Ghimire, Kilho Lee, and Seong-heum Kim, “Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration,” Image and Vision Computing, vol. 136, p. 104745, 2023.](https://www.sciencedirect.com/science/article/pii/S0262885623001191)
+
+```
+@article{GHIMIRE2023104745,
+    title = {Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration},
+    author = {Deepak Ghimire and Kilho Lee and Seong-heum Kim},
+    journal = {Image and Vision Computing},
+    volume = {136},
+    pages = {104745},
+    year = {2023},
+    issn = {0262-8856},
+    doi = {https://doi.org/10.1016/j.imavis.2023.104745},
+    url = {https://www.sciencedirect.com/science/article/pii/S0262885623001191},
+    keywords = {Deep neural networks, Structured pruning, Pruning criteria},
+}
+```
 
 > Note: Filter removal is based on [VainF/Torch-Pruning](https://github.com/VainF/Torch-Pruning).
 
@@ -111,23 +128,4 @@ sh .\scripts\resnet_imagenet\run_resnet_imagenet_pruning.sh
 
 ```ruby
 sh .\scripts\resnet_imagenet\run_resnet_imagenet_eval.sh
-```
-
-## Reference
-
-If you find this code useful, please cite the following paper. 
-
-```
-@article{GHIMIRE2023104745,
-    title = {Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration},
-    author = {Deepak Ghimire and Kilho Lee and Seong-heum Kim},
-    journal = {Image and Vision Computing},
-    volume = {136},
-    pages = {104745},
-    year = {2023},
-    issn = {0262-8856},
-    doi = {https://doi.org/10.1016/j.imavis.2023.104745},
-    url = {https://www.sciencedirect.com/science/article/pii/S0262885623001191},
-    keywords = {Deep neural networks, Structured pruning, Pruning criteria},
-}
 ```
