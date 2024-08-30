@@ -131,3 +131,5 @@ sh .\scripts\resnet_imagenet\run_resnet_imagenet_pruning.sh
 ```ruby
 sh .\scripts\resnet_imagenet\run_resnet_imagenet_eval.sh
 ```
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fghimiredhikura%2Flaasp-filter-pruning&label=Visitors&countColor=%23263759)
