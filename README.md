@@ -50,25 +50,27 @@
 
 ## Models
 
+Download one representative pruned checkpoint per row from the [model checkpoints release](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/tag/model-checkpoints-v1). CIFAR-10 accuracy values summarize multiple runs.
+
 | Model        | Dataset | Baseline Top@1 Acc. (%) | Pruned Top@1 Acc. (%) | Top@1 Acc. Drop (%) | Pruned Top@5 Acc. (%) | FLOPs RR (%)| 
 |:--------------|:-------:|:-----------------------:|:---------------------:|:-------------------:|:---------------------:|:-----------:|
-| [Vgg16](https://drive.google.com/drive/folders/1y29ViTn50rBheigpRqqhoFbqBdlot0m0?usp=sharing)         | CIFAR10 |  93.79 ± 0.23           | 93.90 ± 0.16          | -0.11               | -                    | 34.6         |
-| [Vgg16](https://drive.google.com/drive/folders/1L41gwRmOZlAXO6H07SAZEtGXjdlBdHFo?usp=sharing)        | CIFAR10 |  93.79 ± 0.23           | 93.79 ± 0.11          | 0.00                | -                    | 60.5         |
+| [Vgg16](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/cifar10-vgg16-flops-rr-34.6.pth.tar)         | CIFAR10 |  93.79 ± 0.23           | 93.90 ± 0.16          | -0.11               | -                    | 34.6         |
+| [Vgg16](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/cifar10-vgg16-flops-rr-60.5.pth.tar)        | CIFAR10 |  93.79 ± 0.23           | 93.79 ± 0.11          | 0.00                | -                    | 60.5         |
 |         |  |   |              |         | | | 
-| [ResNet32](https://drive.google.com/drive/folders/1Lu4it1XjvnluZpno3mzoQgl9YELVwQuO?usp=sharing)     | CIFAR10 | 93.12 ± 0.04            | 92.64 ± 0.09          | 0.48                | -                    | 53.3         |
-| [ResNet56](https://drive.google.com/drive/folders/1LvWNBparWqcSAfBJecukR94BwMcHcYhZ?usp=sharing)     | CIFAR10 | 93.61 ± 0.11            | 93.04 ± 0.08          | 0.12                | -                    | 52.6         |
-| [ResNet110](https://drive.google.com/drive/folders/1LwXjwQcdiz4eIPprpSOUCoUG7yX8O3vH?usp=sharing)    | CIFAR10 | 94.41 ± 0.07            | 94.17 ± 0.16          | 0.24                | -                    | 52.5         |
-| [ResNet110](https://drive.google.com/drive/folders/1y6WDGzDcrTTSfpB_d0aHWnLHM4lfv9_D?usp=sharing)    | CIFAR10 | 94.41 ± 0.07            | 93.58 ± 0.21          | 0.83                | -                    | 58.5         | 
+| [ResNet32](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/cifar10-resnet32-flops-rr-53.3.pth.tar)     | CIFAR10 | 93.12 ± 0.04            | 92.64 ± 0.09          | 0.48                | -                    | 53.3         |
+| [ResNet56](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/cifar10-resnet56-flops-rr-52.6.pth.tar)     | CIFAR10 | 93.61 ± 0.11            | 93.04 ± 0.08          | 0.12                | -                    | 52.6         |
+| [ResNet110](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/cifar10-resnet110-flops-rr-52.5.pth.tar)    | CIFAR10 | 94.41 ± 0.07            | 94.17 ± 0.16          | 0.24                | -                    | 52.5         |
+| [ResNet110](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/cifar10-resnet110-flops-rr-58.5.pth.tar)    | CIFAR10 | 94.41 ± 0.07            | 93.58 ± 0.21          | 0.83                | -                    | 58.5         |
 |         |  |   |              |         | | |
-| [ResNet18](https://drive.google.com/drive/folders/1LCsKknuWS81vlHcTxY5B7NIvDQkUf_24?usp=sharing)     | ImageNet | 70.58                  | 68.66                 | 1.92                | 88.50                | 42.2         |
-| [ResNet18](https://drive.google.com/drive/folders/1LC_mJ8TK1gx_YQ46KsojR21hG0ixYs-2?usp=sharing)     | ImageNet | 70.58                  | 68.12                 | 2.46                | 88.07                | 45.4         |
-| [ResNet34](https://drive.google.com/drive/folders/1LC9JS32vEsl7_GKkDRV83jU4coqmtIIO?usp=sharing)     | ImageNet | 73.90                  | 72.65                 | 1.25                | 90.98                | 41.4         |
-| [ResNet34](https://drive.google.com/drive/folders/1LC6IU7V1N8Dw6v3Yj3Z68dESe-ANiv1F?usp=sharing)     | ImageNet | 73.90                  | 72.37                 | 1.53                | 90.80                | 45.4         |
-| [ResNet50](https://drive.google.com/drive/folders/1LB-EIZYu69L5L0C1W5jmP62FVYxgPpIT?usp=sharing)     | ImageNet | 76.48                  | 75.85                 | 0.63                | 92.81                | 42.3         | 
-| [ResNet50](https://drive.google.com/drive/folders/1L5mIhmNxHMW1gnVSkmsJl14bQPnP_tJc?usp=sharing)     | ImageNet | 76.48                  | 75.44                 | 1.04                | 92.59                | 53.9         | 
+| [ResNet18](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-resnet18-flops-rr-42.2.pth.tar)     | ImageNet | 70.58                  | 68.66                 | 1.92                | 88.50                | 42.2         |
+| [ResNet18](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-resnet18-flops-rr-45.4.pth.tar)     | ImageNet | 70.58                  | 68.12                 | 2.46                | 88.07                | 45.4         |
+| [ResNet34](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-resnet34-flops-rr-41.4.pth.tar)     | ImageNet | 73.90                  | 72.65                 | 1.25                | 90.98                | 41.4         |
+| [ResNet34](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-resnet34-flops-rr-45.4.pth.tar)     | ImageNet | 73.90                  | 72.37                 | 1.53                | 90.80                | 45.4         |
+| [ResNet50](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-resnet50-flops-rr-42.3.pth.tar)     | ImageNet | 76.48                  | 75.85                 | 0.63                | 92.81                | 42.3         |
+| [ResNet50](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-resnet50-flops-rr-53.9.pth.tar)     | ImageNet | 76.48                  | 75.44                 | 1.04                | 92.59                | 53.9         |
 |         |  |   |              |         | | | 
-| [MobileNetV2](https://drive.google.com/drive/folders/1zt4JcPSlkJjJARDei2f0cSy-4WBeXEDv?usp=sharing)  | ImageNet | 71.79                  | 71.00                 | 0.79                | 89.86                | 30.0         |
-| [MobileNetV2](https://drive.google.com/drive/folders/1ztFsVI87toRPOKywqpENR4ubGS7Gj9vt?usp=sharing)  | ImageNet | 71.79                  | 68.45                 | 3.34                | 88.40                | 54.5         |
+| [MobileNetV2](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-mobilenetv2-flops-rr-30.0.pth.tar)  | ImageNet | 71.79                  | 71.00                 | 0.79                | 89.86                | 30.0         |
+| [MobileNetV2](https://github.com/ghimiredhikura/laasp-filter-pruning/releases/download/model-checkpoints-v1/imagenet-mobilenetv2-flops-rr-54.5.pth.tar)  | ImageNet | 71.79                  | 68.45                 | 3.34                | 88.40                | 54.5         |
 
 ## VGGNet on CIFAR-10
 
