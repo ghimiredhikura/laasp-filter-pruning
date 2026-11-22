@@ -1,5 +1,10 @@
 # LAASP: Loss-Aware Automatic Selection of Filter Pruning Criteria for Deep Neural Network Acceleration 
 
+> [!TIP]
+> **[Download LAASP models on Hugging Face](https://huggingface.co/ghimiredhikura/LAASP)**
+>
+> Representative VGG16, ResNet, and MobileNetV2 checkpoints for CIFAR-10 and ImageNet.
+
 ![alt text](images/soongsil_els.png)
 
 > [Deepak Ghimire, Kilho Lee, and Seong-heum Kim, “Loss-aware automatic selection of structured pruning criteria for deep neural network acceleration,” Image and Vision Computing, vol. 136, p. 104745, 2023.](https://www.sciencedirect.com/science/article/pii/S0262885623001191)
